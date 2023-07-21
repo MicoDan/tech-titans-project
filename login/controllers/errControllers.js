@@ -22,14 +22,9 @@ const sendErrorPro = (err,res) => {
             status: err.status,
             message: err.message
         })
-
     }else{
-
-         console.log('error ❌',err);
-         
-
-
-        res.status(500).json({
+        console.log('error ❌',err);
+         res.status(500).json({
            status:'error',
            message:'something went wrong! '
         })
@@ -37,7 +32,6 @@ const sendErrorPro = (err,res) => {
 }
 
 module.exports = ((err,req,res,next) =>{
-  
   
     err.statusCode = err.statusCode || 500 ;
     err.status = err.status || 'error';
