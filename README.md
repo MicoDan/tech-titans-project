@@ -14,6 +14,7 @@ Destination browsing: Users can view a list of tourist destinations, their descr
 Destination details: Users can see more information about specific destinations, such as attractions, activities, and user reviews.
 Trip planning: Users can create and manage their trip itineraries.
 Admin Panel: Admins have access to manage destinations, user accounts, and reviews.
+
 Installation
 Clone the repository:
 
