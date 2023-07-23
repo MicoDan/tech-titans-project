@@ -45,7 +45,7 @@ const customerSchema = mongoose.Schema(
 		},
 		pic: {
 			type: String,
-			required: true,
+			// required: true,
 			default: "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg", //default image which apply in the user
 		},
 		regDate: {

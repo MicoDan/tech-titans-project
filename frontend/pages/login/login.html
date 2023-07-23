@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="641659249250-p4t8lm88041u0mp4li0un3kuqfttj7pl.apps.googleusercontent.com"> -->
+    <script src="./login.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+          <div class="logo">
+            <h3>JourneyHive</h3>
+          </div>
+
+          <div class="pages">
+            <ul>
+                    <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+            <li>
+              <a href=""><button>Sign up</button></a>
+            </li>
+            </ul>
+
+          </div>
+      </header>
+
+      <form action="http://localhost:5000/user/customer/login" method="POST" class="login-form">
+       <label for="email">Email</label>
+       <input type="text" name="email" placeholder="write your email" id="email"><br><br>
+       <label for="password">Password</label>
+       <input type="password" name="password" placeholder="write your password" id="password"> <br><br>
+       <button type="submit" class="btn-1" onclick="handleLogin(event)">Login</button><br><br>
+      </form>
+    </div>
+  </body>
+</html>

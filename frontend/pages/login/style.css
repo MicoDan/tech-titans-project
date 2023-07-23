@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding: 20px;
+}
+
+li>a{
+    text-decoration: none;
+    padding: 20px;
+}
+.pages{
+    display: flex;
+}
+.pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.pages li {
+    margin-left: 20px;
+}
+form  h1{
+    text-align: center;
+    justify-content: center;
+}
+li button {
+    background-color: orange;
+    width: 80px;
+    height: 3vh;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+li button:hover {
+    background-color: none;
+  }
+.login-form {
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0 auto;
+    height: 50vh;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 2px solid black;
+    padding: 50px 20px;
+}
+.login-form label,
+.login-form input{
+    display: block;
+    width: 100%;
+}
+.login-form input{
+  padding: 10px;
+  text-indent: 15px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.btn-1 {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.g-signin2{
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    width: 100%;
+}
