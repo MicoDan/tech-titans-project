@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.admin-section,
+.customer-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.admin-section h2,
+.customer-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-section form,
+.customer-section .bus-list {
+    margin-bottom: 20px;
+}
+
+.admin-section form input,
+.admin-section form textarea,
+.admin-section form button,
+.customer-section .bus-list .bus-card {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bus-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.bus-card h3 {
+    margin-top: 0;
+}

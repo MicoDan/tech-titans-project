@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Details Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Bus Details Management</h1>
+    </div>
+    <div class="admin-section">
+        <h2>Admin Dashboard</h2>
+        <form id="addBusForm">
+            <input type="text" name="licensePlate" placeholder="License Plate" required>
+            <input type="text" name="startingStation" placeholder="Starting Station" required>
+            <input type="text" name="destinationStation" placeholder="Destination Station" required>
+            <input type="text" name="totalTravelTime" placeholder="Total Travel Time (HH:mm)" required>
+            <input type="number" name="totalNumberOfSeats" placeholder="Total Number of Seats" required>
+            <input type="number" name="ticketPrice" placeholder="Ticket Price" required>
+            <textarea name="facilities" placeholder="Facilities" rows="3"></textarea>
+            <textarea name="cityStops" placeholder="City Stops (Separate by commas)" rows="3" required></textarea>
+            <input type="text" name="mobileNo" placeholder="Mobile Number" required>
+            <input type="text" name="leavingTime" placeholder="Leaving Time (HH:mm)" required>
+            <button type="submit">Add Bus</button>
+        </form>
+        <div class="bus-list">
+            <!-- Admin bus list will be displayed here dynamically -->
+        </div>
+    </div>
+    <div class="customer-section">
+        <h2>Customer Dashboard</h2>
+        <div class="bus-list">
+            <!-- Customer bus list will be displayed here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

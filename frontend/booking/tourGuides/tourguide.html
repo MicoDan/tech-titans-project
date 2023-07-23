@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide Management</title>
+    <link rel="stylesheet" href="tourguide.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Tour Guide Management</h1>
+    </div>
+    <div class="admin-section">
+        <h2>Admin Dashboard</h2>
+        <form id="addGuideForm">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="gender" placeholder="Gender" required>
+            <input type="text" name="language" placeholder="Language" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <textarea name="description" placeholder="Description" rows="3" required></textarea>
+            <input type="text" name="fee" placeholder="Fee" required>
+            <input type="number" name="phoneNumber" placeholder="Phone Number" required>
+            <button type="submit">Add Tour Guide</button>
+        </form>
+        <div class="guide-list">
+            <!-- Admin guide list will be displayed here dynamically -->
+        </div>
+    </div>
+    <div class="customer-section">
+        <h2>Customer Dashboard</h2>
+        <div class="guide-list">
+            <!-- Customer guide list will be displayed here dynamically -->
+        </div>
+    </div>
+
+    <script src="tourguide.js"></script>
+</body>
+</html>

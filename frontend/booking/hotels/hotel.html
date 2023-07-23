@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hotel Management</h1>
+    </div>
+    <div class="admin-section">
+        <h2>Admin Dashboard</h2>
+        <form id="addHotelForm">
+            <input type="text" name="hotelName" placeholder="Hotel Name" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <textarea name="description" placeholder="Description" rows="3" required></textarea>
+            <textarea name="facilities" placeholder="Facilities" rows="3" required></textarea>
+            <textarea name="rules" placeholder="Rules" rows="3" required></textarea>
+            <input type="text" name="pic" placeholder="Picture URL" required>
+            <button type="submit">Add Hotel</button>
+        </form>
+        <div class="hotel-list">
+            <!-- Admin hotel list will be displayed here dynamically -->
+        </div>
+    </div>
+    <div class="customer-section">
+        <h2>Customer Dashboard</h2>
+        <div class="customer-hotel-list">
+            <!-- Customer hotel list will be displayed here dynamically -->
+        </div>
+    </div>
+
+    <script src="hotel.js"></script>
+</body>
+</html>
