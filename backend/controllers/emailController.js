@@ -1,22 +1,26 @@
 const nodemailer = require('nodemailer');
+const dotenv= require('dotenv');
+dotenv.config();
 
 
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'micodan63@gmail.com', // Replace with your Gmail email
+    user: 'mpnzabera@gmail.com', // Replace with your Gmail email
     pass: process.env.PASSWORD // Replace with your Gmail password
   }
 });
+
+
 
 // Controller to handle sending the contact form email
 exports.sendContactEmail = (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
-    from: {email}, // Replace with your Gmail email
-    to: 'micodan63@gmail.com', // Replace with the recipient's email address
+    from: email, // Replace with your Gmail email
+    to: 'nzaberamikepeter@gmail.com', // Replace with the recipient's email address
     subject: 'Contact Form Submission',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
