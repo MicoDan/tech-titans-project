@@ -1,10 +1,75 @@
 /* Additional styles for the contact form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header{
+    position: relative;
+    top: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+header a{
+    top: 0;
+    display: static;
+    margin-left: 2rem;
+}
+header a span{
+    font-size: 2.5rem;
+    color: #181E4B;
+}
+header nav{
+    width: 100%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: right;
+}
+header nav a{
+    color: #000;
+}
+header nav a:hover{
+    color: #F1A501;
+}
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+}
+h1 img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.contact-form{
+    width: 80%;
+}
+.image img{
+    width: 45rem;
+    height: 40rem;
+}
 .contact-form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 10rem 2rem;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: #ccc;
+    background-color: #fff;
 }
 
 .contact-form input,
@@ -20,7 +85,8 @@
 }
 
 .contact-form button {
-    background-color: #007bff;
+    background-color: #F1A501;
+    border-radius: 0.7rem;
     color: #fff;
     border: none;
     padding: 10px 20px;
