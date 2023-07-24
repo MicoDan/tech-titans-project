@@ -99,3 +99,35 @@ h1 img{
 .error-message {
     color: red;
   }
+
+  @media screen and (max-width: 600px) {
+    .navbar > a {
+      position: relative;
+    }
+  
+    .navbar a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+      list-style-type: none;
+    }
+    .container{
+        display: block;
+        
+    }
+    .image{
+        width: 100%;
+
+    }
+    .contact-form{
+        width: 100%;
+    }
+    
+  }
+  

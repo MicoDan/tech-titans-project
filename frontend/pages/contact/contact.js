@@ -1,3 +1,7 @@
+// responsiveness of the menu
+const navBar= document.getElementsByClassName('navbar')
+
+
 const contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener("submit", async (e) => {
