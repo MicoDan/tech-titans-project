@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <a href="#" class="logo"><span>Journey</span>Hive</a>
+        <nav class="navbar">
+            <a href="../home/home.html">Home</a>
+            <a href="../home/home.html">About</a>
+            <a href="../home/home.html">Bookings</a>
+            <a href="./contact.html">Contact</a>
+            <a href="../login/login.html">Login</a>
+            <a href="../signup/signup.html">SignUp</a>
+        </nav><br>
+         <!-- <img class="my-img" src="./Decore.png"> -->
     </header>
+    <h1><img src="./5124556.jpg">Reach Out To Us</h1>
     <main>
-        <div class="contact-form">
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <a href="../../booking/hotels/hotel.html">hotel page</a><br>
-            <a href="../../booking/reservations/reservation.html">reservation page</a><br>
-            <a href="../../booking/tourGuides/tourguide.html">tourguide page</a><br>
-            <a href="../../booking/transport/transport.html">transport page</a><br>
+        <div class="container">
+            <div class="image">
+                <img src="./5127314.jpg">
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
+        
     </main>
     <script src="contact.js"></script>
 </body>
