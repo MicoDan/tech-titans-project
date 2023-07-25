@@ -1,97 +1,94 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
-
-.container {
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header{
+    position: relative;
+    top: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+header a{
+    top: 0;
+    display: static;
+    margin-left: 2rem;
+}
+header a span{
+    font-size: 2.5rem;
+    color: #181E4B;
+}
+header nav{
+    width: 100%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: right;
+}
+header nav a{
+    color: #000;
+}
+header nav a:hover{
+    color: #F1A501;
+}
+h1{
     text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Rest of the CSS remains unchanged */
-form {
+.contact-form{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    text-align: center;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    height: max-content;
 }
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form input[type="tel"] {
+#login-form input{
+    display: block;
     width: 100%;
+    margin:1rem ;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border: 1.5px solid gray;
+    border-radius: 7px;
 }
-
-form button {
+#signupForm input {
+    display: block;
     width: 100%;
+    margin:1rem ;
     padding: 10px;
+    border: 1.5px solid gray;
+    border-radius: 7px;
+}
+#signupForm input[type=file]{
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #F1A501;
+    border-radius: 0.7rem;
     color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-.picture-input {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.picture-input label {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.picture-input input[type="file"] {
-    display: none; /* Hide the default file input */
-}
-
-.picture-input .upload-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.picture-input .upload-button:hover {
-    background-color: #45a049;
-}
-
-.picture-preview {
-    margin-top: 10px;
-    max-width: 200px;
-    max-height: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.picture-preview img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }

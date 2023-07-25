@@ -7,8 +7,20 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Customer Signup</h1>
+    <header>
+        <a href="#" class="logo"><span>JourneyHive</span></a>
+        <nav class="navbar">
+            <a href="../home/home.html">Home</a>
+            <a href="../home/home.html">About</a>
+            <a href="../home/home.html">Bookings</a>
+            <a href="./contact.html">Contact</a>
+            <a href="../login/login.html">Login</a>
+            <a href="../signup/signup.html">SignUp</a>
+        </nav><br>
+         <!-- <img class="my-img" src="./Decore.png"> -->
+    </header>
+    <h1>Signup</h1>
+    <div class="contact-form">
         <form id="signupForm">
             <input type="text" name="firstName" placeholder="First Name" required>
             <input type="text" name="lastName" placeholder="Last Name" required>
@@ -21,9 +33,7 @@
             <input type="file" name="picture" accept="image/*" required>
             <button type="submit">Signup</button>
         </form>
-
-    <a href="../login/login.html">Log in</a>
-    
+    </div>
     <script src="signup.js"></script>
 </body>
 </html>
