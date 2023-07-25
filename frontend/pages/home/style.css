@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.logo{
+    padding: 20px;
+}
+
+li>a{
+    text-decoration: none;
+    padding: 20px;
+}
+.pages{
+    display: flex;
+}
+.lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.pages li {
+    margin-left: 20px;
+}
+.icon{
+    display: none;
+}
+li button {
+    background-color: rgb(225, 0, 255);
+    width: 80px;
+    height: 3vh;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+li button:hover {
+    background-color: none;
+  }
+
+.text-1 button{
+    width: 20%;
+    height: 3vh;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 192, 203, 0.377);
+}
+.text-1{
+    width: 50%;
+    height: 30vh;
+}
+.images{
+    width: 40%;
+}
+.text-1 h4{
+   font-size: 50px;
+   color: #181E4B;
+   width: 40%;
+   /* width: 40%; */
+}
+.description{
+     margin: 5%;
+     display: flex;
+     justify-content: center;
+}
+.image{
+    width: 40%;
+    height: 30vh;
+    height: 20vh;
+}
+.image img{
+    position: absolute;
+    width: 16.5%;
+
+
+}
+#p-1{
+    color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+  .search-container i {
+    font-size: 24px; /* Increase the font size as needed */
+    color: white; /* Set the icon color */
+  }
+
+  .works,.destinations{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    /* height: 58vh; */
+    width: 100%;
+    padding: 10px 0px;
+
+
+}
+
+
+
+
+  .step,.dest{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    max-width: 400px;
+    height: 30vh;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+}
+.dest{
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
+  height: 30vh;
+}
+.step:hover{
+    transform: translateY(-15px);
+    background-color: white;
+}
+.t-1,.t-2{
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 5%; */
+  width: 100%;
+}
+.t-1 p{
+  color: #5E6282;
+}
+.dest img,.sub-ad img{
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  height: 18vh;
+
+}
+.step i{
+    color: blue;
+    width: 6vw;
+    width: 30px;
+}
+.step h2{
+  font-size: 20px !important;
+}
+.steps ,.dests{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+
+}
+.dests{
+  gap: 80px;
+}
+.advertisement{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  /* align-items: flex-start; */
+}
+.adverts{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.ad-1,.ad-2,.test{
+   font-size: 20px;
+   margin: auto 10%;
+   width: 20%;
+   max-width: 400px;
+}
+.sub-ad{
+ 
+  max-width: 400px;
+  width: 75%;
+  height: 30vh;
+  box-shadow:2px solid #5E6282;
+  border-radius: 10px;
+}
+.test-ad{
+  height: 20vh;
+  width: 80vw;
+  max-width: 400px;
+  margin-top: 50px;
+  margin-left: 20%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+.test{
+  display: flex;
+  width: 50%;
+  max-width: fit-content;
+}
+.adt-1,.adt-2{
+  text-align: center;
+}
+.adt-3{
+  display: flex;
+  justify-content: space-between;
+
+}
+#profile{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 3%;
+  z-index: 1;
+}
+.subscribes{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px 0px;
+
+}
+.subscribe{
+  background-color: #DFD7F9;
+  height: 20vh;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15% 0 0 0;
+}
+#sub{
+  color: #5E6282;
+  
+}
+input{
+  width: 40%;
+  height: 5vh;
+  outline: none;
+  text-indent: 15px;
+  margin-bottom: 20px;
+}
+.subscribe button{
+  height: 5vh;
+  width: 10%;
+  background-color: #FF946D;
+  border: none;
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  /* color: white; */
+  font-size: 14px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+}
+ul li{
+  list-style-type: none;
+}
+.footer-col{
+  width: fit-content;
+  flex: 1;
+  /* margin: 10px; */
+  padding: 10px;
+}
+.footer-col h4{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-col ul{
+  list-style: none;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+.footer-col li{
+  margin-bottom: 5px;
+}
+.footer-col a{
+  text-decoration: none;
+  color: white;
+}
+.footer-col i{
+  margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    li>a {display: none;}
+     a.icon {
+      float: right;
+      display: block;
+    }
+  }
+@media screens and (max-width: 600px) {
+      .pages>ul{
+        position: relative;
+      }
+
+      a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .lists li a{
+        float: none;
+        display: block;
+        text-align: left;
+        list-style-type: none;
+      }
+      .pages{
+        display: none;
+      }
+      .logo{
+        font-size: 24px;
+      }
+      .images img{
+        width: 100%;
+      }
+      .description{
+        display: block;
+      }
+      
+      
+}
+
+
+
+
+@media (max-width: 660px){
+  .steps , .dests {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.step , .dest{
+    width: 90%;
+}
+.works , .destinations{
+    margin-top: 20%;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.text-1 , .image{
+  width: 90%;
+}
+.text-1 p,h4{
+  width: 90%;
+}
+.text-1 h4{
+  font-size: 20px;
+}
+.image{
+  margin-bottom: 40%;
+}
+.image img{
+  width: 100%;
+  margin-bottom: 100px;
+}
+.testmonial{
+  width: 100%;
+}
+
+
+}
