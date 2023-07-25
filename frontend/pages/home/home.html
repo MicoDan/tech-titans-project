@@ -11,16 +11,16 @@
 
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
+        <header> 
+            <div class="logo col-md-3">
                 <h3>JourneyHive</h3>
             </div>
-            <div class="pages" id="myTopnav">
-                <ul class="lists">
-                    <li><a href="">Home</a></li>
+            <div class="pages col-md-9" id="myTopnav">
+                <ul class="lists col-md-12">
+                    <li><a href="/">Home</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Booking</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="./booking.html">Booking</a></li>
                     <li><a href="">Login</a></li>
                     <li>
                         <a href=""><button>Sign up</button></a>
@@ -33,22 +33,22 @@
         </header>
 
         <main>
-            <div class="description">
+            <div class="description col-12">
                 <div class="text-1">
-                    <p id="p-1">Best Destinations around the world</p>
-                    <h4>Travel, enjoy and live a new and full life.</h4>
+                    <p id="p-1" class="col-12">Best Destinations around the world</p>
+                    <h4  class="col-6">Travel, enjoy <br> and live a new <br> and full life.</h4>
                     <p>
                         We always make our customer happy by providing on many as possible
                     </p>
-                    <button>Read more</button>
+                    <button class="col-1">Read more</button>
                 </div>
 
-                <div class="image">
-                    <img src="../assets/image.png" alt="" />
+                <div class="image col-4">
+                    <img src="../assets/image.png" alt=""  class="col-2"/>
                 </div>
             </div>
 
-            <div class="works">
+            <div class="works col-12 col-md-12 col-sm-12">
                 <h1>We offer best services</h1>
                 <div class="steps">
                     <div class="step">
@@ -61,7 +61,7 @@
                             admire do barton <br />vanity itself do in it.t
                         </p>
                     </div>
-                    <div class="step">
+                    <div class="step col-3">
 
                         <i class="fa-solid fa-plane-departure"></i>
                         <h2>Best Places</h2>
@@ -71,7 +71,7 @@
                         </p>
                     </div>
 
-                    <div class="step">
+                    <div class="step col-3">
                         <i class="fa-solid fa-microphone"></i>
                         <h2>Best Service Delivery</h2>
                         <p>
@@ -79,7 +79,7 @@
                             Preferd to men it <br />engrossed listening.
                         </p>
                     </div>
-                    <div class="step">
+                    <div class="step col-3">
                         <i class="fa-solid fa-gear"></i>
                         <h2>Guide Till The End</h2>
                         <p>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="destinations">
+            <div class="destinations col-12 col-sm-12">
                 <h1>Top destination</h1>
                 <div class="dests">
                     <div class="dest">
@@ -142,7 +142,7 @@
 
                 </div>
             </div>
-            <div class="destinations">
+            <div class="destinations col-12 col-sm-12 col-md-12">
                 <div class="dests">
                     <div class="dest">
                         <img src="../assets/destination1.png" alt="">
@@ -180,11 +180,11 @@
                     </div>
                     <div class="dest">
                         <img src="../assets/destination1.png" alt="">
-                        <div class="t-1">
+                        <div class="t-1 col-12">
                             <p>Rome,italy</p>
                             <p>$12.5k</p>
                         </div>
-                        <div class="t-2">
+                        <div class="t-2 col-12">
                             <i class="fa-solid fa-paper-plane"></i>
                             <p>10 days trip</p>
                         </div>
@@ -193,15 +193,15 @@
                 </div>
             </div>
 
-            <div class="advertisement">
+            <div class="advertisement col-12 col-sm-12 col-md-12">
                 <div class="adverts">
                     <div class="ad-1">
                         <p>easy and fast</p>
-                        <h1>Book your next trip <br>
+                        <h1 class="col-sm-12">Book your next trip <br>
                             in 3 easy steps</h1>
                     </div>
-                    <div class="ad-2">
-                        <div class="sub-ad">
+                    <div class="ad-2 col-3">
+                        <div class="sub-ad col-11">
                             <img src="../assets/girl.jpeg" alt="">
                             <div class="adt-1">
                                 <p>trip to Greece</p>
@@ -214,7 +214,7 @@
 
                             </div>
                             <div class="adt-3">
-                                <div>
+                                <div class="sub-adt">
                                     <i class="fa-solid fa-building"></i>
                                     <p>24 people going</p>
                                 </div>
@@ -232,32 +232,33 @@
 
             <div class="testmonial">
                 <div class="adverts">
-                    <div class="ad-1">
-                        <p>Testmonials</p>
-                        <h1>What people say<br>
+                    <div class="ad-1 col-3">
+                        <p class="col-5 col-md-8 col-sm-10">Testmonials</p>
+                        <h1 class="col-sm-12 col-sm-12">What people say<br>
                             about Us.
                         </h1>
                     </div>
                     <div class="test">
-                      <div class="image"><img src="../assets/test.jpg" alt="" id="profile"></div>
-                        <div class="test-ad">
+                        <div class="test-ad col-10">
                             <p>"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”"</p><br>
-
-                            <h5>By Mike Taylor</h5>
-                            <p>Lahore, Pakistan</p>
-
-
-
+                            <div class="t-img">
+                                <div>
+                              <h5>By Mike Taylor</h5>
+                                <p>Lahore, Pakistan</p>
+                                </div>
+                                
+                                <img src="../assets/test.jpg" alt="" id="profile">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="subscribes">
-                <div class="subscribe">
+            <div class="subscribes col-sm-12 ccol">
+                <div class="subscribe col-6 col-md-9 col-sm-12">
                     <p id="sub">Subscribe to get information, latest news and other <br>
                         interesting offers about Jadoo</p> <br><br><br>
-                        <input type="text"> <button>Subscribe</button>
+                        <input type="text" class="col-5"> <button class="col-2">Subscribe</button>
                 </div>
                 
                 
@@ -265,7 +266,7 @@
         </main>
 
 
-        <footer>
+        <footer class="col-12 col-sm-12 col-md-12">
             <div class="logo">
                 <div class="logo">
                     <h3>JourneyHive</h3> <br>
@@ -295,9 +296,9 @@
                 <div className="footer-col">
                     <h4>More</h4>
                     <ul>
-                        <li>Airlinefees</a></li>
-                        <li>Airline</li>
-                        <li>low fare tips</li>
+                        <li><a href="">Airlinefees</a></li>
+                        <li><a href="">Airline</a></li>
+                        <li><a href="">low fare tips</a></li>
                     </ul>
                 </div>
                 <div className="footer-col">
