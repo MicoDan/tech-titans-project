@@ -5,13 +5,12 @@ dotenv.config();
 
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'mpnzabera@gmail.com', // Replace with your Gmail email
-    pass: process.env.PASSWORD // Replace with your Gmail password
-  }
-});
-
+     service: "gmail",
+     auth:{
+      user : 'nzaberamikepeter@gmail.com',
+     pass: process.env.PASSWORD
+     }
+})
 
 
 // Controller to handle sending the contact form email
@@ -31,7 +30,7 @@ exports.sendContactEmail = (req, res) => {
       res.status(500).json({ success: false, error: 'An error occurred while sending the email.' });
     } else {
       console.log('Email sent:', info.response);
-      res.json({ success: true, message: 'Your message has been sent successfully!' });
+      res.json({ success: true, message: 'Your message has been sent successfully! Please check!!' });
     }
   });
 };
