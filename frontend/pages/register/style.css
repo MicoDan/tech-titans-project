@@ -45,14 +45,13 @@ li button:hover {
     background-color: none;
   }
 .login-form {
-    max-width: 400px;
-    min-width: 400px;
+    width: 40vw;
     margin: 0 auto;
-    height: 78vh;
+    height: 85vh;
     flex-direction: column;
     border-radius: 7px;
     border: 2px solid black;
-    padding: 50px 20px;
+    padding: 50px;
 }
 .login-form label,
 .login-form input{
@@ -78,27 +77,27 @@ li button:hover {
     display: none;
 }
 @media screen and (max-width: 600px) {
-    li>a {display: none;}
-     a.icon {
-      float: right;
-      display: block;
-    }
+  li>a {display: none;}
+   a.icon {
+    float: right;
+    display: block;
   }
+}
 @media screens and (max-width: 600px) {
-      .pages>ul{
-        position: relative;
-      }
+    .pages>ul{
+      position: relative;
+    }
 
-      a.icon{
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .lists li a{
-        float: none;
-        display: block;
-        text-align: left;
-        list-style-type: none;
-      }
-      
+    a.icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .lists li a{
+      float: none;
+      display: block;
+      text-align: left;
+      list-style-type: none;
+    }
+    
 }

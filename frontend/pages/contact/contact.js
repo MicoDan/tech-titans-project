@@ -36,6 +36,11 @@ contactForm.addEventListener("submit", async (e) => {
 function displayMessage(type, message) {
     const messageDiv = document.createElement("div");
     messageDiv.classList.add(`${type}-message`);
+    if (type === "success") {
+        messageDiv.style.color = "green";
+      } else if (type === "error") {
+        messageDiv.style.color = "red";
+      }
     messageDiv.textContent = message;
     document.body.appendChild(messageDiv);
 
