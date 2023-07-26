@@ -1,24 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
+
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     margin: 0 5%;
 }
-.logo{
+
+.logo {
     padding: 20px;
 }
 
-li>a{
+li>a {
     text-decoration: none;
     padding: 20px;
 }
-.pages{
+
+.pages {
     display: flex;
 }
+
 .lists {
     list-style: none;
     padding: 0;
@@ -26,12 +30,15 @@ li>a{
     display: flex;
     align-items: center;
 }
+
 .pages li {
     margin-left: 20px;
 }
-.icon{
+
+.icon {
     display: none;
 }
+
 li button {
     background-color: rgb(225, 0, 255);
     width: 80px;
@@ -41,117 +48,150 @@ li button {
     border-radius: 20px;
     cursor: pointer;
 }
+
 li button:hover {
     background-color: none;
-  }
-.container{
-    padding:2em;
+}
+
+.container {
+    padding: 2em;
     margin: 0.1em;
     display: flex;
     flex-direction: column;
     gap: 4em;
-background-color: white;
+    background-color: white;
 }
-.menu{
+
+.menu {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-menu ul{
+
+menu ul {
     list-style-type: none;
-    gap:5em;
-display: flex;
+    gap: 5em;
+    display: flex;
 
 }
-menu a{
+
+menu a {
     text-decoration: none;
     color: black;
     padding: 4px;
     border: 1px solid rgba(0, 0, 0, 0);
 
 }
-menu a:hover,#active{
-border-color: black;
-border-radius: 0.2em;
+
+menu a:hover,
+#active {
+    border-color: black;
+    border-radius: 0.2em;
 
 }
-.book{
+
+.book {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-svg{
+
+svg {
     width: 3em;
 }
-.info{
+
+.info {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.img{
-background-color: antiquewhite;
-margin: 20px auto;
+
+.img {
+    background-color: antiquewhite;
+    margin: 20px auto;
 }
-img{
+
+img {
     width: 30rem;
     height: 30rem;
     flex-shrink: 0;
 
 }
-form
-{
- border-radius: 2.25rem;
- display: flex;
- flex-direction: column;
- gap: 2em;
-background: var(--white, #FFF);
-box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+
+form {
+    border-radius: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
-label{
+label {
     color: #DF6951;
-text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-font-family: Poppins;
- font-size: 1.4rem;/*
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 1.4rem;
+    /*
 font-style: normal;
 font-weight: 600; */
-line-height: normal;
-letter-spacing: 0.055rem;
-text-transform: capitalize;
+    line-height: normal;
+    letter-spacing: 0.055rem;
+    text-transform: capitalize;
 }
 
 
-form input{
-display: block;
-padding: 0.5em;
-height: 1.7rem;
-border-radius: 4px;
-width: 40em;
+form input {
+    display: block;
+    padding: 0.5em;
+    height: 2vh;
+    border-radius: 4px;
+    width: 60%;
 }
-input:not(input[type="submit"]){
+
+input:not(input[type="submit"]) {
     border-radius: 0.75rem;
-border: 4px solid #A49D9D;
-background: #FFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 4px solid #A49D9D;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-input,label{
+
+input,
+label {
     margin: 1em;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     width: 10em;
     background-color: orange;
     padding: 12px;
     border: none;
     text-align: center;
     border-radius: 1em;
-    height: 3em;   
-     color: white;
+    height: 3em;
+    color: white;
 }
+
 @media (max-width:600px) {
-    .info{
+    .info {
         display: block;
         width: 100%;
     }
-    form,.img{
+
+    form,
+    .img {
         width: 100%;
+    }
+
+    li>a {
+        display: none;
+    }
+
+    a.icon {
+        float: right;
+        display: block;
+    }
+    .img img{
+        width: 80%;
+        height: 20vh;
     }
     li>a {display: none;}
     a.icon {
