@@ -1,63 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-
+/* Additional styles for the contact form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: aliceblue;
-    font-family: Poppins;
-    overflow-x: hidden;
-}
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5%;
-}
-.logo{
-    padding: 20px;
-}
-
-li>a{
     text-decoration: none;
-    padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
-.pages{
-    display: flex;
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-.lists {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+header{
+    position: relative;
+    top: 0;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
 }
-.pages li {
-    margin-left: 20px;
+header a{
+    top: 0;
+    display: static;
+    margin-left: 2rem;
 }
-.icon{
-    display: none;
+header a span{
+    font-size: 2.5rem;
+    color: #181E4B;
 }
-li button {
-    background-color: rgb(225, 0, 255);
-    width: 80px;
-    height: 3vh;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+header nav{
+    width: 100%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: right;
 }
-li button:hover {
-    background-color: none;
-  }
-
+header nav a{
+    color: #000;
+}
+header nav a:hover{
+    color: #F1A501;
+}
 h1{
     text-align: center;
-    /* margin-top: 3rem; */
-    font-size: 20px;
+    margin-top: 3rem;
+    font-size: 2.5rem;
 }
 h1 img{
     width: 3.5rem;
@@ -66,8 +54,6 @@ h1 img{
 .container{
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    margin-top: 60px;
 }
 .contact-form{
     width: 80%;
@@ -78,8 +64,7 @@ h1 img{
 }
 .contact-form {
     max-width: 500px;
-    height: 35vh;
-    margin: 80px 0;
+    margin: 10rem 2rem;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
@@ -134,30 +119,15 @@ h1 img{
     }
     .container{
         display: block;
-        width: 100%;
         
-    }
-    .container img{
-       width: 80%;
-       height: 20vh;
-    }
-    .contact-form{
-        width: 80%;
     }
     .image{
         width: 100%;
-        margin-left: 20px;
 
     }
     .contact-form{
         width: 100%;
     }
     
-    li>a {display: none;}
-    a.icon {
-     float: right;
-     display: block;
-   }
   }
-
   

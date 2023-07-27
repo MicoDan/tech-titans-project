@@ -1,52 +1,168 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* Styles from the previous responses */
 
-.header {
-    background-color: #007bff;
-    color: #fff;
+/* New styles for displaying tour guides in 3 cards per row with space */
+h1{
     text-align: center;
-    padding: 20px;
 }
-
-.admin-section,
-.customer-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    display: none;
-}
-
-.admin-section h2,
-.customer-section h2 {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    /* Additional styles to create a card layout */
+    flex: 0 0 calc(33.33% - 2   px); /* 3 cards per row with 20px spacing */
+    margin-bottom: 50px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.admin-section form,
-.customer-section .guide-list {
-    margin-bottom: 20px;
-}
-
-.admin-section form input,
-.admin-section form textarea,
-.admin-section form button,
-.customer-section .guide-list .guide-card {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.guide-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-.guide-card h3 {
-    margin-top: 0;
-}
+  }
+  
+  /* Unique background color for each card */
+  .card:nth-child(1) {
+    background-color: #ffd166; /* Yellow */
+  }
+  
+  .card:nth-child(2) {
+    background-color: #06d6a0; /* Green */
+  }
+  
+  .card:nth-child(3) {
+    background-color: #118ab2; /* Blue */
+  }
+  
+  .card:nth-child(4) {
+    background-color: #ef476f; /* Pink */
+  }
+  
+  .card:nth-child(5) {
+    background-color: #ff9f1c; /* Orange */
+  }
+  
+  .card:nth-child(6) {
+    background-color: #073b4c; /* Dark Blue */
+  }
+  
+  .card:nth-child(7) {
+    background-color: #f8961e; /* Dark Orange */
+  }
+  
+  .card:nth-child(8) {
+    background-color: #282c34; /* Dark Gray */
+  }
+  
+  .card:nth-child(9) {
+    background-color: #6a0572; /* Purple */
+  }
+  
+  .card:nth-child(10) {
+    background-color: #118ab2; /* Blue */
+  }
+  
+  .card img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  .card:nth-child(11) {
+    background-color: #ff5733; /* Coral */
+  }
+  
+  .card:nth-child(12) {
+    background-color: #bada55; /* Lime */
+  }
+  
+  .card:nth-child(13) {
+    background-color: #adff2f; /* Green Yellow */
+  }
+  
+  .card:nth-child(14) {
+    background-color: #ff00ff; /* Magenta */
+  }
+  
+  .card:nth-child(15) {
+    background-color: #9932cc; /* Dark Orchid */
+  }
+  
+  .card:nth-child(16) {
+    background-color: #ff6347; /* Tomato */
+  }
+  
+  .card:nth-child(17) {
+    background-color: #8a2be2; /* Blue Violet */
+  }
+  
+  .card:nth-child(18) {
+    background-color: #cd5c5c; /* Indian Red */
+  }
+  
+  .card:nth-child(19) {
+    background-color: #00ced1; /* Dark Turquoise */
+  }
+  
+  .card:nth-child(20) {
+    background-color: #ff1493; /* Deep Pink */
+  }
+  
+  /* Styles for the new tour guides (21 to 30) */
+  .card:nth-child(21) {
+    background-color: #ffa500; /* Orange */
+  }
+  
+  .card:nth-child(22) {
+    background-color: #40e0d0; /* Turquoise */
+  }
+  
+  .card:nth-child(23) {
+    background-color: #d8bfd8; /* Thistle */
+  }
+  
+  .card:nth-child(24) {
+    background-color: #ff4500; /* Orange Red */
+  }
+  
+  .card:nth-child(25) {
+    background-color: #800080; /* Purple */
+  }
+  
+  .card:nth-child(26) {
+    background-color: #4682b4; /* Steel Blue */
+  }
+  
+  .card:nth-child(27) {
+    background-color: #ffa07a; /* Light Salmon */
+  }
+  
+  .card:nth-child(28) {
+    background-color: #00ff00; /* Lime Green */
+  }
+  
+  .card:nth-child(29) {
+    background-color: #4b0082; /* Indigo */
+  }
+  
+  .card:nth-child(30) {
+    background-color: #ffff00; /* Yellow */
+  }
+  
+  /* Adjust styles for small screens */
+  
+  /* Adjust styles for small screens */
+  @media (max-width: 768px) {
+    main {
+      justify-content: flex-start;
+    }
+  
+    .card {
+      flex: 0 0 calc(50% - 20px); /* 2 cards per row with 20px spacing */
+    }
+  }
+  

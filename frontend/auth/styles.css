@@ -1,94 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    margin: 0;
+/* Reset default margin and padding for list items and remove list styling */
+.nav-list {
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-html{
-    font-size: 70%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-header{
-    position: relative;
-    top: 0;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-}
-header a{
-    top: 0;
-    display: static;
-    margin-left: 2rem;
-}
-header a span{
-    font-size: 2.5rem;
-    color: #181E4B;
-}
-header nav{
-    width: 100%;
-    margin-right: 2rem;
-    display: flex;
-    justify-content: right;
-}
-header nav a{
-    color: #000;
-}
-header nav a:hover{
-    color: #F1A501;
-}
-h1{
+    margin: 0;
+  }
+  li{
+    width: 8em;
+    height: 1em;
     text-align: center;
-    margin-top: 3rem;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.contact-form{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border: 1.5px solid gray;
     border-radius: 10px;
-    max-width: 400px;
-    min-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    height: max-content;
-}
-#login-form input{
-    display: block;
-    width: 100%;
-    margin:1rem ;
-    padding: 10px;
-    border: 1.5px solid gray;
-    border-radius: 7px;
-}
-#signupForm input {
-    display: block;
-    width: 100%;
-    margin:1rem ;
-    padding: 10px;
-    border: 1.5px solid gray;
-    border-radius: 7px;
-}
-#signupForm input[type=file]{
-    border: none;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button {
-    background-color: #F1A501;
-    border-radius: 0.7rem;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
+    margin-bottom: 2vh;
+    padding-top: 10px;
+  }
+  ul{
+    border-radius: 50px;
+  }
+  
+  /* Style the navbar container */
+  .navbar {
+    background-color: #333; /* Change this to your preferred background color */
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* Style the individual navbar items (links) */
+  .nav-list li {
+    margin-right: 15px; /* Adjust spacing between items */
+  }
+  
+  .nav-list li:last-child {
+    margin-right: 0; /* Remove right margin for the last item */
+  }
+  
+  .nav-list li a {
+    color: #fff; /* Change link color */
+    text-decoration: none;
+    padding: 10px; /* Add padding around links */
+    border-radius: 10px; /* Add rounded corners to the links */
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555; /* Change background color on hover */
+  }
+  
+  /* Style the "Sign up" button */
+  .sign-up-btn {
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    padding: 10px 20px; /* Add padding around the button text */
+    border-radius: 5px; /* Add rounded corners to the button */
+  }
+  
+  .sign-up-btn:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+  }
+  
+  /* Style the "hamburger" icon (you'll need to include Font Awesome for the icon to show) */
+  .nav-list li .icon {
+    display: none; /* Hide the icon by default on larger screens */
+  }
+  
+  /* Media query for smaller screens to display the icon */
+  @media screen and (max-width: 768px) {
+    .nav-list li:not(:last-child) {
+      display: none; /* Hide all navigation items except the last one (the icon) */
+    }
+  
+    .nav-list li.icon {
+      display: block; /* Show the icon */
+      margin-right: 15px; /* Add some spacing to the icon */
+    }
+  }
+  

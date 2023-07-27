@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script src="home.js"></script>
 </head>
 
 <body>
@@ -18,12 +19,19 @@
             <div class="pages col-md-9" id="myTopnav">
                 <ul class="lists col-md-12">
                     <li><a href="/">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="../About/about.html">About</a></li>
                     <li><a href="../contact/contact.html">Contact</a></li>
-                    <li><a href="./booking.html">Booking</a></li>
-                    <li><a href="">Login</a></li>
+                    <li>  <div class="dropdown">
+                        <button id="dropdownButton" onclick="toggleDropdown()">Booking</button>
+                        <div id="dropdownContent" class="dropdown-menu hidden">
+                          <a href="../../booking/hotels/index.html">Hotels</a>
+                          <a href="../../booking/transport/transport.html">Cars</a>
+                          <a href="../../booking/tourGuides/tourguide.html">Tour Guides</a>
+                        </div>
+                      </div></li>
+                    <li><a href="../../auth/auth.html">Login</a></li>
                     <li>
-                        <a href=""><button>Sign up</button></a>
+                        <a href="../../auth/auth.html"><button>Sign up</button></a>
                     </li>
                     <li>
                         <a href="" class="icon"><i class="fas fa-bars"></i></a>
@@ -90,11 +98,11 @@
                     </div>
                 </div>
             </div>
-            <div class="destinations col-12 col-sm-12 col-md-12">
+            <div class="destinations col-12 col-sm-12">
                 <h1>Top destination</h1>
                 <div class="dests">
                     <div class="dest">
-                        <img src="../assets/rome.jpg" alt="">
+                        <img src="../assets/destination1.png" alt="">
                         <div class="t-1">
                             <p>Rome,italy</p>
                             <p>$12.5k</p>
@@ -128,7 +136,7 @@
                         </div>
                     </div>
                     <div class="dest">
-                        <img src="../assets/uae.jpeg" alt="">
+                        <img src="../assets/destination1.png" alt="">
                         <div class="t-1">
                             <p>Rome,italy</p>
                             <p>$12.5k</p>
@@ -145,9 +153,9 @@
             <div class="destinations col-12 col-sm-12 col-md-12">
                 <div class="dests">
                     <div class="dest">
-                        <img src="../assets/dubiai.jpg" alt="">
+                        <img src="../assets/destination1.png" alt="">
                         <div class="t-1">
-                            <p>UAE,Dubai</p>
+                            <p>Rome,italy</p>
                             <p>$12.5k</p>
                         </div>
                         <div class="t-2">
@@ -156,10 +164,10 @@
                         </div>
                     </div>
                     <div class="dest">
-                        <img src="../assets/Akagera.jpg" alt="">
+                        <img src="../assets/swiz.jpg" alt="">
                         <div class="t-1">
-                            <p>Nyagatare,Rwanda</p>
-                            <p>$3.5k</p>
+                            <p>Egypt</p>
+                            <p>$13.5k</p>
                         </div>
                         <div class="t-2">
                             <i class="fa-solid fa-paper-plane"></i>
@@ -168,9 +176,9 @@
                     </div>
 
                     <div class="dest">
-                        <img src="../assets/gorillas.jpg" alt="">
+                        <img src="../assets/pyramid.jpg" alt="">
                         <div class="t-1">
-                            <p>Musanze,Rwanda</p>
+                            <p>Jungfrau,switzerland</p>
                             <p>$20.5k</p>
                         </div>
                         <div class="t-2">
@@ -179,27 +187,25 @@
                         </div>
                     </div>
                     <div class="dest">
-                        <img src="../assets/london.jpeg" alt="">
+                        <img src="../assets/destination1.png" alt="">
                         <div class="t-1 col-12">
-                            <p>London,Uk</p>
+                            <p>Rome,italy</p>
                             <p>$12.5k</p>
                         </div>
                         <div class="t-2 col-12">
                             <i class="fa-solid fa-paper-plane"></i>
                             <p>10 days trip</p>
                         </div>
-                    </div> 
-                    
+                    </div>
 
                 </div>
-               
             </div>
 
             <div class="advertisement col-12 col-sm-12 col-md-12">
                 <div class="adverts">
                     <div class="ad-1">
                         <p>easy and fast</p>
-                        <h1 class="col-sm-10">Book your next trip <br>
+                        <h1 class="col-sm-12">Book your next trip <br>
                             in 3 easy steps</h1>
                     </div>
                     <div class="ad-2 col-3">
@@ -236,7 +242,7 @@
                 <div class="adverts">
                     <div class="ad-1 col-3">
                         <p class="col-5 col-md-8 col-sm-10">Testmonials</p>
-                        <h1 class="col-sm-9">What people say<br>
+                        <h1 class="col-sm-12 col-sm-12">What people say<br>
                             about Us.
                         </h1>
                     </div>
@@ -254,16 +260,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="subscribes col-sm-12 ccol">
-                <div class="subscribe col-6 col-md-9 col-sm-12">
-                    <p id="sub">Subscribe to get information, latest news and other <br>
-                        interesting offers about Jadoo</p> <br><br><br>
-                        <input type="text" class="col-5"> <button class="col-2">Subscribe</button>
-                </div>
-                
-                
             </div>
         </main>
 
