@@ -14,7 +14,26 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
+  button{
+    padding: 5px;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #540251;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  button:active{
+    cursor: pointer;
+  }
+  h1{
+    color: #f156ec;
+    font-size: 100px;
+  }
   .card {
     /* Additional styles to create a card layout */
     flex: 0 0 calc(33.33% - 2   px); /* 3 cards per row with 20px spacing */
@@ -22,49 +41,49 @@ section {
     padding: 1.5rem;
     border-radius: 10px;
     background-color: #f1f1f1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(128, 0, 128, 0.5);
     text-align: center;
   }
   
   /* Unique background color for each card */
   .card:nth-child(1) {
-    background-color: #ffd166; /* Yellow */
+    background-color: #f156ec; /* Yellow */
   }
   
   .card:nth-child(2) {
-    background-color: #06d6a0; /* Green */
+    background-color: #f156ec; /* Green */
   }
   
   .card:nth-child(3) {
-    background-color: #118ab2; /* Blue */
+    background-color: #f156ec; /* Blue */
   }
   
   .card:nth-child(4) {
-    background-color: #ef476f; /* Pink */
+    background-color: #f156ec; /* Pink */
   }
   
   .card:nth-child(5) {
-    background-color: #ff9f1c; /* Orange */
+    background-color: #f156ec; /* Orange */
   }
   
   .card:nth-child(6) {
-    background-color: #073b4c; /* Dark Blue */
+    background-color: #f156ec; /* Dark Blue */
   }
   
   .card:nth-child(7) {
-    background-color: #f8961e; /* Dark Orange */
+    background-color: #f156ec; /* Dark Orange */
   }
   
   .card:nth-child(8) {
-    background-color: #282c34; /* Dark Gray */
+    background-color: #f156ec; /* Dark Gray */
   }
   
   .card:nth-child(9) {
-    background-color: #6a0572; /* Purple */
+    background-color: #f156ec; /* Purple */
   }
   
   .card:nth-child(10) {
-    background-color: #118ab2; /* Blue */
+    background-color: #f156ec; /* Blue */
   }
   
   .card img {
@@ -73,84 +92,84 @@ section {
     margin-bottom: 1rem;
   }
   .card:nth-child(11) {
-    background-color: #ff5733; /* Coral */
+    background-color: #f156ec; /* Coral */
   }
   
   .card:nth-child(12) {
-    background-color: #bada55; /* Lime */
+    background-color: #f156ec; /* Lime */
   }
   
   .card:nth-child(13) {
-    background-color: #adff2f; /* Green Yellow */
+    background-color: #f156ec; /* Green Yellow */
   }
   
   .card:nth-child(14) {
-    background-color: #ff00ff; /* Magenta */
+    background-color: #f156ec; /* Magenta */
   }
   
   .card:nth-child(15) {
-    background-color: #9932cc; /* Dark Orchid */
+    background-color: #f156ec; /* Dark Orchid */
   }
   
   .card:nth-child(16) {
-    background-color: #ff6347; /* Tomato */
+    background-color: #f156ec; /* Tomato */
   }
   
   .card:nth-child(17) {
-    background-color: #8a2be2; /* Blue Violet */
+    background-color: #f156ec; /* Blue Violet */
   }
   
   .card:nth-child(18) {
-    background-color: #cd5c5c; /* Indian Red */
+    background-color: #f156ec; /* Indian Red */
   }
   
   .card:nth-child(19) {
-    background-color: #00ced1; /* Dark Turquoise */
+    background-color: #f156ec; /* Dark Turquoise */
   }
   
   .card:nth-child(20) {
-    background-color: #ff1493; /* Deep Pink */
+    background-color: #f156ec; /* Deep Pink */
   }
   
   /* Styles for the new tour guides (21 to 30) */
   .card:nth-child(21) {
-    background-color: #ffa500; /* Orange */
+    background-color: #f156ec; /* Orange */
   }
   
   .card:nth-child(22) {
-    background-color: #40e0d0; /* Turquoise */
+    background-color: #f156ec; /* Turquoise */
   }
   
   .card:nth-child(23) {
-    background-color: #d8bfd8; /* Thistle */
+    background-color: #f156ec; /* Thistle */
   }
   
   .card:nth-child(24) {
-    background-color: #ff4500; /* Orange Red */
+    background-color: #f156ec; /* Orange Red */
   }
   
   .card:nth-child(25) {
-    background-color: #800080; /* Purple */
+    background-color: #f156ec; /* Purple */
   }
   
   .card:nth-child(26) {
-    background-color: #4682b4; /* Steel Blue */
+    background-color: #f156ec; /* Steel Blue */
   }
   
   .card:nth-child(27) {
-    background-color: #ffa07a; /* Light Salmon */
+    background-color: #f156ec; /* Light Salmon */
   }
   
   .card:nth-child(28) {
-    background-color: #00ff00; /* Lime Green */
+    background-color: #f156ec; /* Lime Green */
   }
   
   .card:nth-child(29) {
-    background-color: #4b0082; /* Indigo */
+    background-color: #f156ec; /* Indigo */
   }
   
   .card:nth-child(30) {
-    background-color: #ffff00; /* Yellow */
+    background-color: #f156ec; /* Yellow */
   }
   
   /* Adjust styles for small screens */
@@ -164,5 +183,81 @@ section {
     .card {
       flex: 0 0 calc(50% - 20px); /* 2 cards per row with 20px spacing */
     }
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    box-shadow: 0px 0px 10px rgba(128, 0, 128, 0.5);
+}
+.logo{
+    padding: 20px;
+}
+
+li>a{
+    text-decoration: none;
+    padding: 20px;
+}
+.pages{
+    display: flex;
+}
+.lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.pages li {
+    margin-left: 20px;
+}
+.icon{
+    display: none;
+}
+li button {
+    background-color: rgb(225, 0, 255);
+    width: 80px;
+    height: 3vh;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+li button:hover {
+    background-color: none;
+  }
+
+  #dropdownButton {
+    color: white;
+    padding-bottom: 7px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for the dropdown content */
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Hide the dropdown content by default */
+  .hidden {
+    display: none;
   }
   

@@ -45,11 +45,18 @@
               <li><a href="../../pages/home/home.html">Home</a></li>
               <li><a href="">About</a></li>
               <li><a href="../../pages/contact/contact.html">Contact</a></li>
+              <li>  <div class="dropdown">
+                <button id="dropdownButton" onclick="toggleDropdown()">Booking</button>
+                <div id="dropdownContent" class="dropdown-menu hidden">
+                  <a href="../../booking/hotels/index.html">Hotels</a>
+                  <a href="../../booking/transport/transport.html">Cars</a>
+                  <a href="../../booking/tourGuides/tourguide.html">Tour Guides</a>
+                </div>
+              </div></li>
+              <li><a href="../../auth/auth.html">login</a></li>
+              <li><a href="../../auth/auth.html">signup</a></li>
             </ul>
           </div>
-        </div>
-        <div class="media_button">
-          <i class="fas fa-bars" id="mediaButton"></i>
         </div>
 
         <div class="contact flexSB">
@@ -453,5 +460,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

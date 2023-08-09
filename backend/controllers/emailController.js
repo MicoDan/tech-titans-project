@@ -25,7 +25,7 @@ exports.sendContactEmail = (req, res) => {
 
     const mailOptions = {
       from: { email }, // Replace with your Outlook email
-      to: "mugishayves189000@gmail.com", // Replace with the recipient's email address
+      to: "micodan369@gmail.com", // Replace with the recipient's email address
       subject: "Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };

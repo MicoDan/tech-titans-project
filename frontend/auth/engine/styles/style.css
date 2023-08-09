@@ -98,8 +98,8 @@ body * {
   transition: transform .8s, height .5s, -webkit-transform .8s;
   -webkit-transform: var(--body-rotate);
           transform: var(--body-rotate);
-  -webkit-box-shadow: 0px 0px 4px 5px #163352;
-          box-shadow: 0px 0px 4px 5px #163352;
+  -webkit-box-shadow: 0px 0px 4px 5px #e80be1;
+          box-shadow: 0px 0px 4px 5px #e80be1;
   border-radius: 5px;
 }
 
@@ -140,8 +140,8 @@ body * {
   height: 20px;
   border-radius: 10px;
   background-color: transparent;
-  -webkit-box-shadow: 0px 0px 1px 1px #0d6efd;
-          box-shadow: 0px 0px 1px 1px #0d6efd;
+  -webkit-box-shadow: 0px 0px 1px 1px #e80be1;
+          box-shadow: 0px 0px 1px 1px #e80be1;
   margin-top: 10px;
   position: relative;
   cursor: pointer;
@@ -150,7 +150,7 @@ body * {
 .header .header-toggler .header-toggler-circle {
   width: 25px;
   height: 25px;
-  background-color: #0d6efd;
+  background-color: #e80be1;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -195,7 +195,7 @@ body * {
           backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
-  background: #26425f;
+  background: #ffffff;
 }
 
 .body .login-container .login-content, .body .login-container .signup-content {
@@ -213,7 +213,7 @@ body * {
           backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
-  background: #26425f;
+  background: #ffffff;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -243,7 +243,7 @@ body * {
 
 .login-content .login-header .login-header-icon, .signup-content .login-header .login-header-icon, .signup-content .signup-header .login-header-icon, .signup-content .signup-header .signup-header-icon {
   display: inline-block;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid #e80be1;
   border-bottom-color: transparent;
   border-radius: 50%;
   padding: 10px;
@@ -278,7 +278,7 @@ body * {
   text-align: left;
   padding: 4px;
   font-size: 1.15rem;
-  color: #617ac7;
+  color: #e80be1;
   cursor: pointer;
 }
 
@@ -293,7 +293,7 @@ body * {
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #e80be1;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -310,7 +310,7 @@ body * {
 .login-input .login-input-icon, .signup-input .login-input-icon, .signup-input .signup-input-icon {
   width: auto;
   height: auto;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid #e80be1;
   border-radius: 50%;
   width: 27px;
   height: 27px;
@@ -337,39 +337,39 @@ body * {
 .login-input .login-input-icon svg, .signup-input .login-input-icon svg, .signup-input .signup-input-icon svg {
   width: 17px;
   stroke-width: 2px;
-  stroke: rgba(255, 255, 255, 0.7);
+  stroke: #e80be1;
 }
 
 .login-input .login-input-input, .signup-input .login-input-input, .signup-input .signup-input-input {
   width: 80%;
   background-color: transparent;
   font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #e80be1;
   padding-left: 10px;
   outline: none;
   border: none;
 }
 
 .login-input .login-input-input::-webkit-input-placeholder, .signup-input .login-input-input::-webkit-input-placeholder, .signup-input .signup-input-input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: #e80be1;
   -webkit-transition: color .1s;
   transition: color .1s;
 }
 
 .login-input .login-input-input:-ms-input-placeholder, .signup-input .login-input-input:-ms-input-placeholder, .signup-input .signup-input-input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: #e80be1;
   -webkit-transition: color .1s;
   transition: color .1s;
 }
 
 .login-input .login-input-input::-ms-input-placeholder, .signup-input .login-input-input::-ms-input-placeholder, .signup-input .signup-input-input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: #e80be1;
   -webkit-transition: color .1s;
   transition: color .1s;
 }
 
 .login-input .login-input-input::placeholder, .signup-input .login-input-input::placeholder, .signup-input .signup-input-input::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: #e80be1;
   -webkit-transition: color .1s;
   transition: color .1s;
 }
@@ -397,7 +397,7 @@ body * {
 .login-button-container .login-button, .signup-button-container .login-button, .signup-button-container .signup-button {
   width: 120px;
   height: 40px;
-  background-color: #0E2A47;
+  background-color: #e80be1;
   border: none;
   outline: none;
   color: rgba(255, 255, 255, 0.9);

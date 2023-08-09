@@ -12,10 +12,9 @@
 }
 
 :root{
-  --main-color: #fe5b3d;
-  --second-color: #ffac38;
+  --main-color: #e80be1;
+  --second-color: #e80be1;
   --text-color: #444;
-  --gradient: linear-gradient(#fe5b3d, #ffac38);
 }
 
 html::-webkit-scrollbar{
@@ -46,6 +45,7 @@ header{
   justify-content: space-between;
   background: #eeeff1;
   padding: 15px 100px;
+  box-shadow: 0px 0px 10px rgba(128, 0, 128, 0.5);
 }
 
 .logo img{
@@ -96,7 +96,7 @@ header{
 }
 
 .header-btn .sign-in{
-  background: #474fa0;
+  background: #e80be1;
   color: #fff;
   border-radius: 0.5rem;
 }
@@ -178,7 +178,7 @@ header{
   padding: 10px 34px;
   border: none;
   border-radius: 0.5rem;
-  background: #474fa0;
+  background: #e80be1;
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
@@ -288,7 +288,7 @@ header{
 .services-container .box .btn{
   display: flex;
   justify-content: center;
-  background: #474fa0;
+  background: #e80be1;
   color: #fff;
   padding: 10px;
   border-radius: 0.5rem;
@@ -323,7 +323,7 @@ header{
 
 .about-text .btn{
   padding: 10px 20px;
-  background: #474fa0;
+  background: #e80be1;
   color: #fff;
   border-radius: 0.5rem;
 }
@@ -378,7 +378,7 @@ header{
 }
 
 .newsletter{
-  background: linear-gradient(to top right, #fe5b3d, #ffac38);
+  background: linear-gradient(to top right, #e80be1, #e80be1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,7 +405,7 @@ header{
 }
 
 .newsletter .box .btn{
-  background: #474fa0;
+  background: #e80be1;
   color: #fff;
   padding: 8px 20px;
   border-radius: 0.5rem;
@@ -564,4 +564,78 @@ header{
   .services-container{
     grid-template-columns: repeat(auto-fit, minmax(254px, auto));
   }
+}
+#dropdownButton {
+  color: white;
+  padding-bottom: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for the dropdown content */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+.logo{
+  padding: 20px;
+}
+
+li>a{
+  text-decoration: none;
+  padding: 20px;
+}
+.pages{
+  display: flex;
+}
+.lists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.pages li {
+  margin-left: 20px;
+}
+.icon{
+  display: none;
+}
+li button {
+  background-color: rgb(225, 0, 255);
+  width: 80px;
+  height: 3vh;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+li button:hover {
+  background-color: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hide the dropdown content by default */
+.hidden {
+  display: none;
 }

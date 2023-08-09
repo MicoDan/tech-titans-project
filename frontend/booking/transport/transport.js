@@ -26,3 +26,8 @@ sr.reveal('.services-container .box',{delay: 400, origin: 'top'});
 sr.reveal('.about-container .box',{delay: 400, origin: 'top'});
 sr.reveal('.reviews-container',{delay: 400, origin: 'top'});
 sr.reveal('.newsletter .box',{delay: 400, origin: 'bottom'});
+
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  dropdownContent.classList.toggle("hidden");
+}

@@ -15,13 +15,20 @@
             </div>
             <div class="pages col-md-9" id="myTopnav">
                 <ul class="lists col-md-12">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="../home/home.html">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="../contact/contact.html">Contact</a></li>
-                    <li><a href="./booking.html">Booking</a></li>
-                    <li><a href="">Login</a></li>
+                    <li>  <div class="dropdown">
+                        <button id="dropdownButton" onclick="toggleDropdown()">Booking</button>
+                        <div id="dropdownContent" class="dropdown-menu hidden">
+                          <a href="../../booking/hotels/index.html">Hotels</a>
+                          <a href="../../booking/transport/transport.html">Cars</a>
+                          <a href="../../booking/tourGuides/tourguide.html">Tour Guides</a>
+                        </div>
+                      </div></li>
+                    <li><a href="../../auth/auth.html">Login</a></li>
                     <li>
-                        <a href=""><button>Sign up</button></a>
+                        <a href="../../auth/auth.html"><button>Sign up</button></a>
                     </li>
                     <li>
                         <a href="" class="icon"><i class="fas fa-bars"></i></a>
@@ -125,5 +132,6 @@
             </div>
     </footer>
     </div>
+    <script src="about.js"></script>
 </body>
 </html>

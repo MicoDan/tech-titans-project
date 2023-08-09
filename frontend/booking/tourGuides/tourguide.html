@@ -7,10 +7,34 @@
   <link rel="stylesheet" href="tourguide.css">
 </head>
 <body>
-  <header>
-    <h1>Tour Guides</h1>
-  </header>
-
+  <header> 
+    <div class="logo col-md-3">
+        <h3>JourneyHive</h3>
+    </div>
+    <div class="pages col-md-9" id="myTopnav">
+        <ul class="lists col-md-12">
+            <li><a href="../../pages/home/home.html">Home</a></li>
+            <li><a href="../../pages/About/about.html">About</a></li>
+            <li><a href="../../pages/contact/contact.html">Contact</a></li>
+            <li>  <div class="dropdown">
+                <button id="dropdownButton" onclick="toggleDropdown()">Booking</button>
+                <div id="dropdownContent" class="dropdown-menu hidden">
+                  <a href="../../booking/hotels/hotel.html  ">Hotels</a>
+                  <a href="../../booking/transport/transport.html">Cars</a>
+                  <a href="../../booking/tourGuides/tourguide.html">Tour Guides</a>
+                </div>
+              </div></li>
+            <li><a href="../../auth/auth.html">Login</a></li>
+            <li>
+                <a href="../../auth/auth.html"><button>Sign up</button></a>
+            </li>
+            <li>
+                <a href="" class="icon"><i class="fas fa-bars"></i></a>
+            </li>
+        </ul>
+    </div>
+</header>
+  <h1>Tourguides</h1>
   <main>
     <section id="tourGuidesSection">
       <!-- Tour guide cards will be dynamically added here -->

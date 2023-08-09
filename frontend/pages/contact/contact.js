@@ -49,3 +49,7 @@ function displayMessage(type, message) {
         messageDiv.style.display = "none";
     }, 3000);
 }
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    dropdownContent.classList.toggle("hidden");
+  }
