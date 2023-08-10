@@ -73,7 +73,7 @@ li button:hover {
 
 
 .team{
-   padding: 5% 20%;
+   padding: 5% 5%;
    background-color: aliceblue;
 }
 .owner{
@@ -85,7 +85,8 @@ li button:hover {
     padding-left: 50px;
 }
 .board{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .owner img{
     width: 20vw;
@@ -114,7 +115,7 @@ li button:hover {
   .subscribe button{
     height: 5vh;
     color: white;
-    background-color: #FF946D;
+    background-color: #e509ec;
     border: none;
   }
   .subscribes{
