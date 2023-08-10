@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aliceblue;
+    background-color: rgb(251, 251, 251);
     font-family: Poppins;
     overflow-x: hidden;
 }
@@ -54,15 +54,18 @@ li button {
 li button:hover {
     background-color: none;
   }
-
+#header{
+    color:rgb(236, 85, 236);
+}
 h1{
     text-align: center;
     /* margin-top: 3rem; */
     font-size: 20px;
-}
-h1 img{
-    width: 3.5rem;
-    height: 3.5rem;
+    color:rgb(236, 85, 236);
+    position: relative;
+    top:3.2rem;
+
+
 }
 .container{
     display: flex;
@@ -74,12 +77,12 @@ h1 img{
     width: 80%;
 }
 .image img{
-    width: 45rem;
-    height: 40rem;
+    width: 35rem;
+    height: 29rem;
 }
 .contact-form {
     max-width: 500px;
-    height: 35vh;
+    height: 42vh;
     margin: 80px 0;
     padding: 20px;
     border: 1px solid #ccc;
@@ -99,14 +102,19 @@ h1 img{
 .contact-form textarea {
     resize: vertical;
 }
+#header{
+    cursor: pointer;
+}
 
 .contact-form button {
-    background-color: #F1A501;
+    background-color:rgb(232, 73, 232);
     border-radius: 0.7rem;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    position: relative;
+    top: 1.3rem;
 }
 .success-message {
     color: green;
