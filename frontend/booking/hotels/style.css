@@ -411,6 +411,7 @@ p {
 /*----------footer-------------*/
 footer {
   padding: 60px 0;
+  background-color: #c212d9;
 }
 footer h3 {
   font-weight: 500;
@@ -466,4 +467,9 @@ footer .icon {
 }
 h2{
   color: #e80be1;
+}
+.btn_log{
+  padding: 4px;
+  margin-bottom: 1em;
+  margin-left: 2px;
 }

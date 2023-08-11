@@ -19,15 +19,12 @@
             <li>  <div class="dropdown">
                 <button id="dropdownButton" onclick="toggleDropdown()">Booking</button>
                 <div id="dropdownContent" class="dropdown-menu hidden">
-                  <a href="../../booking/hotels/hotel.html  ">Hotels</a>
+                  <a href="../hotels/index.html  ">Hotels</a>
                   <a href="../../booking/transport/transport.html">Cars</a>
                   <a href="../../booking/tourGuides/tourguide.html">Tour Guides</a>
                 </div>
               </div></li>
-            <li><a href="../../auth/auth.html">Login</a></li>
-            <li>
-                <a href="../../auth/auth.html"><button>Sign up</button></a>
-            </li>
+              <li><button class="btn_log" onclick="logout()">Log out</button></li>
             <li>
                 <a href="" class="icon"><i class="fas fa-bars"></i></a>
             </li>
@@ -40,6 +37,7 @@
       <!-- Tour guide cards will be dynamically added here -->
     </section>
   </main>
+  
 
   <script src="tourguide.js"></script>
 </body>

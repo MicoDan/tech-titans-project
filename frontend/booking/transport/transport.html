@@ -35,10 +35,7 @@
               </div>
             </div>
           </li>
-          <li><a href="../../auth/auth.html">Login</a></li>
-          <li>
-            <a href="../../auth/auth.html"><button>Sign up</button></a>
-          </li>
+          <li><button class="btn_log" onclick="logout()">Log out</button></li>
           <li>
             <a href="" class="icon"><i class="fas fa-bars"></i></a>
           </li>
@@ -62,17 +59,17 @@
         <form action="">
           <div class="input-box">
             <span>Location</span>
-            <input type="search" name="" id="" placeholder="Search Places" />
+            <input type="search" name="location" id="" placeholder="Search Places" />
           </div>
           <div class="input-box">
             <span>Pick-Up Date</span>
-            <input type="date" name="" id="" />
+            <input type="date" name="pick-up-date" id="" />
           </div>
           <div class="input-box">
             <span>Return Date</span>
-            <input type="date" name="" id="" />
+            <input type="date" name="return-date" id="" />
           </div>
-          <input type="submit" name="" id="" class="btn" />
+          <button class="btn" onclick="handleFormSubmission(event)">Get Car</button>
         </form>
       </div>
     </section>

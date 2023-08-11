@@ -50,6 +50,7 @@ li button {
     border-radius: 20px;
     cursor: pointer;
 }
+
 li button:hover {
     background-color: none;
   }
@@ -78,7 +79,8 @@ li button:hover {
 }
 .owner{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 10px;
 }
 .owner div{
@@ -92,6 +94,9 @@ li button:hover {
     width: 20vw;
     border-radius: 10px;
     height: 40vh;
+}
+.honorine{
+    width: 22vw !important;
 }
 .subscribe{
     background-color: #DFD7F9;
@@ -137,6 +142,7 @@ footer{
     padding:0 20%;
     justify-content: space-between;
     bottom: 0;
+    background-color: #e509ec;
   }
   ul li{
     list-style-type: none;

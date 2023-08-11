@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +12,37 @@ body{
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
+.enjoy .text{
+    overflow: hidden;
+    position: relative;
+  }
+.enjoy .text.first-text{
+  color: black;
+  font-family:sans-serif;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  border-left: 2px solid rgb(225, 0, 255);
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+  40% , 60% {
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+
+
 
 
 header{
@@ -71,11 +106,11 @@ li button:hover {
    font-size: 38px;
    color: #181E4B;
 }
-.description{
+/* .description{
      margin: 5%;
      display: flex;
      justify-content: center;
-}
+} */
 .image{
     width: 40%;
     height: 30vh;
@@ -97,17 +132,36 @@ li button:hover {
     color: white; 
   }
 
-  .works,.destinations{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    flex-wrap: wrap;
-    padding: 10px 0px;
-
+  .swipper-button-prev::after,
+.swipper-button-next::after{
+ content: '';
+}
+.swipper-button-prev,
+.swipper-button-next{
+   width: initial;
+   height: initial;
+   font-size: 3rem;
+   color: rgb(225, 0, 255);
+   display: none;
 
 }
+i{
+  color: black;
+}
+.swipper-button-prev{
+  right: 0;
+}
+.swipper-pagination-bullet{
+  background-color: hsl(212,32%,40%);
+  opacity: 1;
+}
+.swipper-pagination-bullet-active{
+   background-color: rgb(225, 0, 255);
 
+}
+.card_image img{
+    height: 30vh;
+}
 
 
 
@@ -124,6 +178,9 @@ li button:hover {
     margin-top: 20px;
     border-radius: 10px;
     transition: 0.5s ease-out;
+}
+i{
+  /* color: black !important; */
 }
 .dest{
   background-color: white;
@@ -151,11 +208,7 @@ li button:hover {
   height: 18vh;
 
 }
-.step i{
-    color: blue;
-    width: 6vw;
-    width: 30px;
-}
+
 .step h2{
   font-size: 20px !important;
 }
@@ -257,7 +310,7 @@ input{
   background-color: #FF946D;
   border: none;
 }
-footer{
+/* footer{
   position: relative;
   height: 30vh;
   font-size: 14px;
@@ -283,7 +336,7 @@ ul li{
 
 .footer-col i{
   margin-right: 10px;
-}
+} */
 @media screen and (max-width: 600px) {
   li>a {display: none;}
    a.icon {

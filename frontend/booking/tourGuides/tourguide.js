@@ -190,3 +190,7 @@ const tourGuides = [
       tourGuidesSection.appendChild(tourGuideCard);
     });
   });
+  function logout(){
+    window.location.href = "../home/home2.html";
+    alert('you are logging out')
+  }
